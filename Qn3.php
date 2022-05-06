@@ -24,8 +24,8 @@
             }
         }
 
-        class circle{
-            function area($r){
+        class circle implements findarea{
+            function area($r,$b){
                 $area = 0.5* $r* $r;
                 echo "Area of Circle : ".$area."<br>";
             }
@@ -38,7 +38,7 @@
         $fs -> area($s,$b);
 
         $fc = new circle;
-        $fc -> area($r);
+        $fc -> area($r,$b);
     }
 ?>
 
@@ -60,4 +60,3 @@
     </form>
 </body>
 </html>
-
